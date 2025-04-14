@@ -757,6 +757,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
             @Override
             public void onClick(View v) {
                 publishEvent(CallEvent.UPLOAD);
+                onDisconnect();
             }
         };
     }
