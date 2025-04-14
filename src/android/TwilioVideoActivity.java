@@ -325,12 +325,12 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
      */
     private void initializeUI() {
         setDisconnectAction();
+        setUploadAction();
 
         if (config.getPrimaryColorHex() != null) {
             int primaryColor = Color.parseColor(config.getPrimaryColorHex());
             ColorStateList color = ColorStateList.valueOf(primaryColor);
             connectActionFab.setBackgroundTintList(color);
-            uploadActionFab.setBackgroundTintList(color);
         }
 
         if (config.getSecondaryColorHex() != null) {

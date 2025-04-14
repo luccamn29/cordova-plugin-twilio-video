@@ -25,7 +25,7 @@
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="@dimen/fab_margin"
         android:src="@drawable/ic_attach_file_white_24dp"
-        app:backgroundTint="#3e4666"
+        app:backgroundTint="#FFFFFF"
     />
     <LinearLayout
         android:layout_width="match_parent"
