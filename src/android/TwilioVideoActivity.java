@@ -89,6 +89,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
     private CameraCapturerCompat cameraCapturer;
     private LocalAudioTrack localAudioTrack;
     private LocalVideoTrack localVideoTrack;
+    private FloatingActionButton uploadActionFab;
     private FloatingActionButton connectActionFab;
     private FloatingActionButton switchCameraActionFab;
     private FloatingActionButton localVideoActionFab;
@@ -118,6 +119,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
         thumbnailVideoView = findViewById(FAKE_R.getId("thumbnail_video_view"));
 
         connectActionFab = findViewById(FAKE_R.getId("connect_action_fab"));
+        uploadActionFab = findViewById(FAKE_R.getId("upload_action_fab"));
         switchCameraActionFab = findViewById(FAKE_R.getId("switch_camera_action_fab"));
         localVideoActionFab = findViewById(FAKE_R.getId("local_video_action_fab"));
         muteActionFab = findViewById(FAKE_R.getId("mute_action_fab"));
@@ -328,6 +330,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
             int primaryColor = Color.parseColor(config.getPrimaryColorHex());
             ColorStateList color = ColorStateList.valueOf(primaryColor);
             connectActionFab.setBackgroundTintList(color);
+            uploadActionFab.setBackgroundTintList(color);
         }
 
         if (config.getSecondaryColorHex() != null) {
@@ -356,6 +359,15 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
         connectActionFab.setImageDrawable(ContextCompat.getDrawable(this, FAKE_R.getDrawable("ic_call_end_white_24px")));
         connectActionFab.show();
         connectActionFab.setOnClickListener(disconnectClickListener());
+    }
+
+    /*
+     * The actions performed during upload.
+     */
+    private void setUploadAction() {
+        uploadActionFab.setImageDrawable(ContextCompat.getDrawable(this, FAKE_R.getDrawable("ic_call_end_white_24px")));
+        uploadActionFab.show();
+        uploadActionFab.setOnClickListener(uploadClickListener());
     }
 
     /*
@@ -736,6 +748,15 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
                 } else {
                     onDisconnect();
                 }
+            }
+        };
+    }
+
+    private View.OnClickListener uploadClickListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                publishEvent(CallEvent.UPLOAD);
             }
         };
     }
