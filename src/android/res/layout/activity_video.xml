@@ -18,6 +18,15 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_call_white_24px"
         app:backgroundTint="#f76c6c" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_action_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:src="@drawable/ic_attach_file_white_24dp"
+        app:backgroundTint="#3e4666"
+    />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
