@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet TVIVideoView *previewView;
 
 @property (nonatomic, weak) IBOutlet UIButton *disconnectButton;
+@property (nonatomic, weak) IBOutlet UIButton *uploadButton;
 @property (nonatomic, weak) IBOutlet UIButton *micButton;
 @property (nonatomic, weak) IBOutlet UILabel *roomLabel;
 @property (nonatomic, weak) IBOutlet UILabel *roomLine;

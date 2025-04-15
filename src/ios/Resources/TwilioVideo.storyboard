@@ -109,6 +109,24 @@
                                     <action selector="disconnectButtonPressed:" destination="jSN-F6-Q4K" eventType="touchUpInside" id="ekH-u1-k6a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q34-23-NnM">
+                                <rect key="frame" x="157" y="591" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="FYs-ey-ILV"/>
+                                    <constraint firstAttribute="height" constant="60" id="ktB-C7-UPs"/>
+                                </constraints>
+                                <state key="normal" image="attach_item.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="uploadButtonPressed:" destination="jSN-F6-Q4K" eventType="touchUpInside" id="2IV-VQ-37M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -118,11 +136,14 @@
                             <constraint firstItem="qlu-eV-2lM" firstAttribute="top" secondItem="8oD-ke-cGW" secondAttribute="bottom" constant="16" id="i2A-RE-Xm1"/>
                             <constraint firstItem="tZu-uw-hgi" firstAttribute="top" secondItem="krA-sT-Z3g" secondAttribute="bottom" constant="16" id="o0p-IZ-2Th"/>
                             <constraint firstItem="hJ3-NM-pz1" firstAttribute="trailing" secondItem="3Bh-pO-6uY" secondAttribute="trailingMargin" constant="5" id="sFH-2X-Gms"/>
+                            <constraint firstItem="q34-23-NnM" firstAttribute="centerX" secondItem="krA-sT-Z3g" secondAttribute="centerX" id="aBc-De-Fg1"/>
+                            <constraint firstItem="q34-23-NnM" firstAttribute="centerY" secondItem="rwp-9E-VzS" secondAttribute="centerY" id="xYz-12-Wv9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cameraSwitchButton" destination="XKU-af-eTc" id="jTc-4v-uIt"/>
                         <outlet property="disconnectButton" destination="krA-sT-Z3g" id="uQu-1U-Ree"/>
+                        <outlet property="uploadButton" destination="q34-23-NnM" id="r4T-92-XdL"/>
                         <outlet property="micButton" destination="rwp-9E-VzS" id="SW4-po-OHw"/>
                         <outlet property="previewView" destination="hJ3-NM-pz1" id="1kY-rd-tEJ"/>
                         <outlet property="videoButton" destination="7bK-Tc-zw5" id="WoD-99-cw1"/>
@@ -135,6 +156,7 @@
     </scenes>
     <resources>
         <image name="end_call.png" width="24" height="24"/>
+        <image name="attach_item.png" width="24" height="24"/>
         <image name="mic.png" width="12" height="24"/>
         <image name="switch_camera.png" width="24" height="18"/>
         <image name="video.png" width="24" height="13"/>

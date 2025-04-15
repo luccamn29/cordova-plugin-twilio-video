@@ -8,6 +8,7 @@ NSString *const DISCONNECTED = @"DISCONNECTED";
 NSString *const DISCONNECTED_WITH_ERROR = @"DISCONNECTED_WITH_ERROR";
 NSString *const RECONNECTING = @"RECONNECTING";
 NSString *const RECONNECTED = @"RECONNECTED";
+NSString *const UPLOAD = @"UPLOAD";
 NSString *const PARTICIPANT_CONNECTED = @"PARTICIPANT_CONNECTED";
 NSString *const PARTICIPANT_DISCONNECTED = @"PARTICIPANT_DISCONNECTED";
 NSString *const AUDIO_TRACK_ADDED = @"AUDIO_TRACK_ADDED";
@@ -83,6 +84,10 @@ NSString *const CLOSED = @"CLOSED";
     } else {
         [self onDisconnect];
     }
+}
+
+- (IBAction)uploadButtonPressed:(id)sender {
+    [[TwilioVideoManager getInstance] publishEvent: UPLOAD];
 }
 
 - (IBAction)micButtonPressed:(id)sender {

@@ -32,6 +32,9 @@
         <resource-file src="src/ios/Resources/end_call.png" target="Resources/end_call.png" />
         <resource-file src="src/ios/Resources/end_call@2x.png" target="Resources/end_call@2x.png" />
         <resource-file src="src/ios/Resources/end_call@3x.png" target="Resources/end_call@3x.png" />
+        <resource-file src="src/ios/Resources/attach_item.png" target="Resources/attach_item.png" />
+        <resource-file src="src/ios/Resources/attach_item@2x.png" target="Resources/attach_item@2x.png" />
+        <resource-file src="src/ios/Resources/attach_item@3x.png" target="Resources/attach_item@3x.png" />
         <resource-file src="src/ios/Resources/mic.png" target="Resources/mic.png" />
         <resource-file src="src/ios/Resources/mic@2x.png" target="Resources/mic@2x.png" />
         <resource-file src="src/ios/Resources/mic@3x.png" target="Resources/mic@3x.png" />
