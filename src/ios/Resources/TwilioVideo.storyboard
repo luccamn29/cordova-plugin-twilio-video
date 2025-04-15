@@ -113,8 +113,8 @@
                                 <rect key="frame" x="157" y="591" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="FYs-ey-ILV"/>
-                                    <constraint firstAttribute="height" constant="60" id="ktB-C7-UPs"/>
+                                    <constraint firstAttribute="width" constant="50" id="FYs-ey-ILV"/>
+                                    <constraint firstAttribute="height" constant="50" id="ktB-C7-UPs"/>
                                 </constraints>
                                 <state key="normal" image="attach_item.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -136,8 +136,8 @@
                             <constraint firstItem="qlu-eV-2lM" firstAttribute="top" secondItem="8oD-ke-cGW" secondAttribute="bottom" constant="16" id="i2A-RE-Xm1"/>
                             <constraint firstItem="tZu-uw-hgi" firstAttribute="top" secondItem="krA-sT-Z3g" secondAttribute="bottom" constant="16" id="o0p-IZ-2Th"/>
                             <constraint firstItem="hJ3-NM-pz1" firstAttribute="trailing" secondItem="3Bh-pO-6uY" secondAttribute="trailingMargin" constant="5" id="sFH-2X-Gms"/>
-                            <constraint firstItem="q34-23-NnM" firstAttribute="centerX" secondItem="krA-sT-Z3g" secondAttribute="centerX" id="aBc-De-Fg1"/>
-                            <constraint firstItem="q34-23-NnM" firstAttribute="centerY" secondItem="rwp-9E-VzS" secondAttribute="centerY" id="xYz-12-Wv9"/>
+                            <constraint firstItem="q34-23-NnM" firstAttribute="centerX" secondItem="rwp-9E-VzS" secondAttribute="centerX" id="aBc-De-Fg1"/>
+                            <constraint firstItem="q34-23-NnM" firstAttribute="centerY" secondItem="krA-sT-Z3g" secondAttribute="centerY" id="xYz-12-Wv9"/>
                         </constraints>
                     </view>
                     <connections>
