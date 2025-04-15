@@ -365,7 +365,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
      * The actions performed during upload.
      */
     private void setUploadAction() {
-        uploadActionFab.setImageDrawable(ContextCompat.getDrawable(this, FAKE_R.getDrawable("ic_call_end_white_24px")));
+        uploadActionFab.setImageDrawable(ContextCompat.getDrawable(this, FAKE_R.getDrawable("ic_attach_file_black_24dp")));
         uploadActionFab.show();
         uploadActionFab.setOnClickListener(uploadClickListener());
     }
