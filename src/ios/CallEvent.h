@@ -17,6 +17,7 @@ extern NSString * const EVENT_REMOTE_VIDEO_TRACK_REMOVED;
 extern NSString * const EVENT_PERMISSIONS_REQUIRED;
 extern NSString * const EVENT_HANG_UP;
 extern NSString * const EVENT_CLOSED;
+extern NSString * const EVENT_UPLOAD;
 
 @interface CallEvent : NSObject
 
