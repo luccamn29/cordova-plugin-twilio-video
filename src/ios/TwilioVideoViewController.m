@@ -81,7 +81,8 @@ static TVIRoom *currentRoom;
 }
 
 - (IBAction)uploadButtonPressed:(id)sender {
-    [[TwilioVideoManager getInstance] publishEvent: UPLOAD];
+    [[TwilioVideoManager getInstance] publishEvent:[CallEvent of:EVENT_UPLOAD]];
+
 }
 
 - (IBAction)micButtonPressed:(id)sender {
