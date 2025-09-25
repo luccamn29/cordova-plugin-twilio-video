@@ -34,6 +34,9 @@
         <resource-file src="src/ios/Resources/end_call.png" target="Resources/end_call.png" />
         <resource-file src="src/ios/Resources/end_call@2x.png" target="Resources/end_call@2x.png" />
         <resource-file src="src/ios/Resources/end_call@3x.png" target="Resources/end_call@3x.png" />
+        <resource-file src="src/ios/Resources/attach_item.png" target="Resources/attach_item.png" />
+        <resource-file src="src/ios/Resources/attach_item@2x.png" target="Resources/attach_item@2x.png" />
+        <resource-file src="src/ios/Resources/attach_item@3x.png" target="Resources/attach_item@3x.png" />
         <resource-file src="src/ios/Resources/mic.png" target="Resources/mic.png" />
         <resource-file src="src/ios/Resources/mic@2x.png" target="Resources/mic@2x.png" />
         <resource-file src="src/ios/Resources/mic@3x.png" target="Resources/mic@3x.png" />
@@ -93,6 +96,7 @@
         <framework src="com.google.android.gms:play-services-gcm:+" />
         <framework src="src/android/twiliovideo.gradle" custom="true" type="gradleReference" />
 
+        <resource-file src="src/android/res/drawable/ic_attach_file_black_24dp.xml" target="res/drawable/ic_attach_file_black_24dp.xml" />
         <resource-file src="src/android/res/drawable/ic_call_black_24dp.xml" target="res/drawable/ic_call_black_24dp.xml" />
         <resource-file src="src/android/res/drawable/ic_call_end_white_24px.xml" target="res/drawable/ic_call_end_white_24px.xml" />
         <resource-file src="src/android/res/drawable/ic_call_white_24px.xml" target="res/drawable/ic_call_white_24px.xml" />

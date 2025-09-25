@@ -55,5 +55,4 @@ public class CallEvent {
             .append(", error=").append("error")
             .append('}').toString();
     }
-
 }

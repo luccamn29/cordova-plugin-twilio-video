@@ -80,6 +80,10 @@ static TVIRoom *currentRoom;
     }
 }
 
+- (IBAction)uploadButtonPressed:(id)sender {
+    [[TwilioVideoManager getInstance] publishEvent: UPLOAD];
+}
+
 - (IBAction)micButtonPressed:(id)sender {
     // We will toggle the mic to mute/unmute and change the title according to the user action.
 
