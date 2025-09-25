@@ -16,6 +16,7 @@ NSString * const EVENT_REMOTE_VIDEO_TRACK_REMOVED = @"REMOTE_VIDEO_TRACK_REMOVED
 NSString * const EVENT_PERMISSIONS_REQUIRED = @"PERMISSIONS_REQUIRED";
 NSString * const EVENT_HANG_UP = @"HANG_UP";
 NSString * const EVENT_CLOSED = @"CLOSED";
+NSString * const EVENT_UPLOAD = @"UPLOAD";
 
 @implementation CallEvent
 
