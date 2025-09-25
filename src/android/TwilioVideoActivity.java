@@ -880,7 +880,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                publishEvent(CallEvent.UPLOAD);
+                publishEvent(CallEvent.of(CallEventId.UPLOAD));
                 // onDisconnect();
             }
         };
